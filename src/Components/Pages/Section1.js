@@ -1,9 +1,50 @@
 import React from 'react'
 
-function Section1() {
+import scroll from '../Pic/mousedown1.gif'
+import bg1 from '../Pic/bg1.png'
+
+import Exhaust from '../Pic/exhaust.png'
+import Z400 from '../Pic/z400-logo.png'
+import N400 from '../Pic/n400-logo.png'
+
+const Section1 = () => {
+
+    const Style = ({
+        Menu:{
+            height: "7vh",
+        },
+        Content:{
+            height: "92vh"
+        }
+    })
+
     return (
         <div className="section1">
-            
+            <div className="container-fluid pt-2 text-left" style={ Style.Menu }>
+                <img src={N400} style={{height: "90%"}}/>
+                <img src={Z400} style={{height: "80%"}}/>
+            </div>
+
+            <div className="container-fluid border border-danger " style={ Style.Content }>
+                <div className="row " style={{paddingTop: "30vh"}}>
+                    <div className="col-6 border border-success " >
+                    <img src={Exhaust} style={{height: "50%"}} 
+                        uk-scrollspy="cls: uk-animation-scale-up; offset-top:0; repeat: true"/><br/>
+                        
+                        <div className="ExhaustName" >
+                            Exhaust Sound
+                        </div>
+
+                    </div>
+
+                    <div className="col-12 text-center" style={{marginTop: "1vh"}}>
+
+                        <img src={scroll} style={{height: "10vh"}}/>
+                    </div>
+                    
+                </div>
+            </div>
+                
         </div>
     )
 }

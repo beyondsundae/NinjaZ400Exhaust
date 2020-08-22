@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  color:white;
 }
 
 .App-logo {
@@ -38,6 +39,11 @@
 }
 
   /*----------------------------*/
+
+  .ExhaustName{
+    font-size: 5rem;
+    font-weight: bold;
+  }
 
 .section1{
   background-color: rgba(0,0,0,0.9);
