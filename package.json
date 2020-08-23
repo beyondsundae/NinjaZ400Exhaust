@@ -8,9 +8,10 @@
     "@testing-library/user-event": "^7.2.1",
     "aos": "^2.3.4",
     "react": "^16.13.1",
+    "react-awesome-slider": "^4.1.0",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3",
-    "react-soundplayer": "^1.0.5"
+    "react-player": "^2.6.1",
+    "react-scripts": "3.4.3"
   },
   "scripts": {
     "start": "react-scripts start",
