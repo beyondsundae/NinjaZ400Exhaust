@@ -55,11 +55,73 @@
   height: 100vh
 } 
 
+.NinjaLogo{
+  height: 90%;
+}
+.ZLogo{
+  height: 70%;
+}
+
+.Exhaust{
+  height: auto;
+  width: auto;
+}
+
 /* Extra small devices (phones, 600px and down) Mobile  */
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+  .NinjaLogo{
+    height: 80% ;
+  }
+  .ZLogo{
+    height: 60%;
+  }
+
+  .Exhaust{
+    height: 30%;
+    /* width: auto; */
+  }
+
+  .ExhaustName{
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  .section1{
+    background-image: url("./Components/Pic/bg1.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 70% ;
+    
+    }
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+  .NinjaLogo{
+    height: 90% ;
+  }
+  .ZLogo{
+    height: 70%;
+  }
+
+  .Exhaust{
+    height: 40%;
+    /* width: auto; */
+  }
+
+  .ExhaustName{
+    font-size: 5rem;
+    font-weight: bold;
+  }
+
+  .section1{
+    background-image: url("./Components/Pic/bg1.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 70% ;
+    
+    }
+}
 
 /* Medium devices (landscape tablets, 768px and up) iPad vertical */
 @media only screen and (min-width: 768px) {

@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactPlayer from "react-player"
 import AwesomeSlider from 'react-awesome-slider';
-import 'react-awesome-slider/dist/styles.css';
+import '../customCSS/styles.css';
 
 
 import AudioPlayer, { RHAP_UI } from "react-h5-audio-player";
