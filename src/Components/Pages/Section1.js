@@ -28,8 +28,7 @@ const Section1 = () => {
             <div className="container-fluid border border-danger " style={ Style.Content }>
                 <div className="row " style={{paddingTop: "30vh"}}>
                     <div className="col-6 col-md-8 col-lg-6 border border-success " >
-                    <img src={Exhaust} style={{height: "50%"}} 
-                        uk-scrollspy="cls: uk-animation-scale-up; offset-top:0; repeat: true"/><br/>
+                    <img className="animate__animated animate__zoomInDown" src={Exhaust} style={{height: "50%"}}/><br/>
                         
                         <div className="ExhaustName" >
                             Exhaust Sound
