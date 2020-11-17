@@ -19,6 +19,7 @@ import FSCShorty from "../Cover/Fake SC Shorty.jpg"
 import FSCCRT from "../Cover/Fake SC CRT.jpg"
 import FSCCNC from "../Cover/Fake SC CNC.jpg"
 
+
 const Section2 = () => {
 
     const Style = ({
@@ -38,42 +39,47 @@ const Section2 = () => {
     const Data = [
         {
             Pic:N400y,
-            Link: "https://cf-media.sndcdn.com/YE266kPqoCZw.128.mp3?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLW1lZGlhLnNuZGNkbi5jb20vWUUyNjZrUHFvQ1p3LjEyOC5tcDMiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2MDU1OTA2NjN9fX1dfQ__&Signature=TSenLBKNw7ASm3XnhhNtdpxCF~dtVReqByTmYSJ95Y4zKP3P-XiDr-lWtO99eAxejzmmQ~qiwHF2a05PqDVz4X3hH00ROUlgN90S8-vcpNzB2fsdyCRZkgMoiFkZFPdkaTNK6sgV4YL0Uh5hrsZSDZ~PASJ-RrJ6ff00ABVfQ1ClxxN5q7r7f-Q4R8Hnao7q-tcZPYklP9GMOaD6hf76LnmeQ16nPyhBMtnv5DuajYqHGy02yH~PU38yYbJeDvwZzBtWrObh11vNmfv-rD3JAQvminExSLanf7TsVk-912Y~T0pFwr~nwDLX3tsXdnzpWe2Z6RY27SgDrnBvEHJI6w__&Key-Pair-Id=APKAI6TU7MMXM5DG6EPQ",
-            Message: "ราคาโดยประมาณ: ฿1,200"}, 
+            Link: "https://audio.jukehost.co.uk/9hY73vD2xQIMAfjFWskUrg0bHe6avQzg.mp3",
+            Message: "ราคาโดยประมาณ: ฿1,000 - ฿1,200"}, 
         {
             Pic:RAkraCarbon,
-            Link: "https://download1980.mediafire.com/6z8a1ni0newg/y7jnnjp6r5t5uo1/Real_AkraCarbon.mp3",
+            Link: "https://od.lk/s/MjBfMTI4NjcxNDhf/Real_AkraCarbon.mp3",
             Message: "ราคาโดยประมาณ: ฿13,600"}, 
         {
             Pic:RAkraTita,
-            Link: "https://download1323.mediafire.com/a156wycpjkzg/lrkexo6qotrelhp/Real_AkraTita.mp3",
+            Link: "https://audio.jukehost.co.uk/n13patyw2ePcwi7sdasgQu6h1oyDvwAv.mp3",
             Message: "ราคาโดยประมาณ: ฿15,000"}, 
         {
             Pic:FAkraGP,
-            Link: "https://download1334.mediafire.com/p1hznqameuag/a5xdu65q91pkicp/Fake_Akra_GP.mp3",
+            Link: "https://audio.jukehost.co.uk/1nHrJEkvxhKV3YZHl7gcOKDTDXM2ePRh.mp3",
             Message: "ราคาโดยประมาณ: ฿2,690"}, 
         {
             Pic:RLeolv10,
-            Link: "https://download1327.mediafire.com/h4zopqoa5s2g/7lb3xtgcogx84ru/Real_Leo_lv10.mp3",
+            Link: "https://audio.jukehost.co.uk/eZKROWoVTeklDqOzMHNmkJrISBWy3oCI.mp3",
             Message: "ราคาโดยประมาณ: B6,700"}, 
         {
             Pic:RSCCRT,
-            Link: "https://download853.mediafire.com/9gojuy93xsdg/hgdz63mudwbw938/Real_SC_CRT.mp3",
+            Link: "https://audio.jukehost.co.uk/GIpq9TzEJtLuZgmQNmDam0C9sgSbswId.mp3",
             Message: "ราคาโดยประมาณ: ฿18,000"}, 
         {
             Pic:FSCShorty,
-            Link: "https://download948.mediafire.com/ox1evr5guoeg/dbw0x6daq8qj153/Fake_SC_Shorty.mp3",
+            Link: "https://audio.jukehost.co.uk/MJ2H2PHLBNoWrHsEU13PzWrMOT9zLb0q.mp3",
             Message: "ราคาโดยประมาณ: ฿2,900"}, 
         {
             Pic:FSCCRT,
-            Link: "https://download1491.mediafire.com/c7jsrbbporxg/it3i9rtv0m80dsk/Fake_SC_CRT.mp3",
+            Link: "https://audio.jukehost.co.uk/3Eojwrh6re2Q0kc6zdOcXn6aTVWLQYXV.mp3",
             Message: "ราคาโดยประมาณ: ฿700-900"}, 
         {
             Pic:FSCCNC,
-            Link: "https://download857.mediafire.com/9j8hr6wmexag/mtoiwwzbqrake3n/Fake_SC_CNC.mp3",
+            Link: "https://audio.jukehost.co.uk/ZBSJOAxthpOCelVl0lmG1mK1mhDm2NEG.mp3",
             Message: "ราคาโดยประมาณ: ฿1,400"}
     ];
     //I try to using audio deposit website but Audio URL always change. So I thing using own database or add audio to folder. ;__;
+    //Local mp3 not working
+
+    //Free Storage that working
+    //https://jukehost.co.uk/
+    //https://www.opendrive.com/
 
     return (
         <div className="section2">
@@ -100,7 +106,7 @@ const Section2 = () => {
                                                     />
                                                 </div>
 
-                                                <div className="col-9" style={{bottom:"45px", fontSize:"3rem", fontWeight: "bold"}}>
+                                                <div className="col-9" style={{bottom:"45px", fontSize:"2.3rem", fontWeight: "bold"}}>
                                                     {item.Message}
                                                 </div>
                                             </div>
