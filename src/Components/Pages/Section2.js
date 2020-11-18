@@ -27,7 +27,11 @@ const Section2 = () => {
             height: "7vh",
         },
         Content:{
-            height: "92vh"
+            height: "87vh"
+        },
+        Footer:{
+            height: "6vh",
+            textAlign: "right"
         }
     })
 
@@ -83,11 +87,11 @@ const Section2 = () => {
 
     return (
         <div className="section2">
-           <div className="container-fluid border border-danger" style={Style.Menu}/>
+           <div className="container-fluid " style={Style.Menu}/>
 
            <div className="container-fluid border border-danger" style={Style.Content}>
-               <div className="row" style={{height: "91vh", paddingTop: "2vh"}}>
-                   <div className="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6 offset-lg-6 border border-danger" ref={ref}>
+               <div className="row" style={{height: "auto", paddingTop: "2vh"}}>
+                   <div className="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6 offset-lg-6 border border-warning" ref={ref}>
                        <div className={inView ? "animate__animated animate__slideInRight" : "d-none"} >
                                 <AwesomeSlider infinite={false} transitionDelay="0" className="border border-danger"  style={{height:"70vh"}}>        
                                     {Data.map((item, index) =>{
@@ -106,7 +110,7 @@ const Section2 = () => {
                                                     />
                                                 </div>
 
-                                                <div className="col-9" style={{bottom:"45px", fontSize:"2.3rem", fontWeight: "bold"}}>
+                                                <div className="MufflerPrice col-9" style={{bottom:"45px", fontSize:"2.3rem", fontWeight: "bold"}}>
                                                     {item.Message}
                                                 </div>
                                             </div>
@@ -118,6 +122,19 @@ const Section2 = () => {
                        
                    </div>
                </div>
+           </div>
+
+           <div className="container-fluid pt-1" style={Style.Footer}>
+                <strong className="pr-4">
+                    By beyondsundae 
+                </strong> 
+                <a target="_blank" href="https://github.com/beyondsundae" >
+                    <img 
+                        src="https://avatars2.githubusercontent.com/u/59742129?s=60&v=4" 
+                        className="pr-3"
+                        alt="Beyondsundae"
+                        style={{ borderRadius:"50%",height: "36px" }}/>
+                </a>
            </div>
         </div>
     )

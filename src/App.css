@@ -62,6 +62,10 @@
   height: 70%;
 }
 
+.FarFromTopMuffler{
+  padding-top: 20vh;
+}
+
 .Exhaust{
   height: auto;
   width: auto;
@@ -76,14 +80,23 @@
     height: 60%;
   }
 
+  .FarFromTopMuffler{
+    padding-top: 5vh;
+  }
+
   .Exhaust{
-    height: 30%;
-    /* width: auto; */
+    /* height: 30%; */
+    width: 80% ;
   }
 
   .ExhaustName{
-    font-size: 3rem;
+    font-size: 1rem;
     font-weight: bold;
+    padding-top: 10px;
+  }
+
+  .Scroll{
+    padding-top: 35vh;
   }
 
   .section1{
@@ -93,9 +106,19 @@
     background-size: 70% ;
     
     }
+  .section2{
+    background-image: url("./Components/Pic/bg2.png");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 60% ;
+    }
+
+  .MufflerPrice{
+    font-size: 1.5rem !important;
+  }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Small devices (portrait tablets and large phones, 600px and up) iPhone */
 @media only screen and (min-width: 600px) {
   .NinjaLogo{
     height: 90% ;
@@ -104,13 +127,17 @@
     height: 70%;
   }
 
+  .FarFromTopMuffler{
+    padding-top: 20vh;
+  }
+
   .Exhaust{
-    height: 40%;
+    height: 60%;
     /* width: auto; */
   }
 
   .ExhaustName{
-    font-size: 5rem;
+    font-size: 1.6rem;
     font-weight: bold;
   }
 
@@ -121,6 +148,16 @@
     background-size: 70% ;
     
     }
+  .section2{
+    background-image: url("./Components/Pic/bg2.png");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 60% ;
+    }
+
+  .MufflerPrice{
+    font-size: 2rem;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) iPad vertical */
