@@ -18,7 +18,8 @@ import RSCCRT from "../Cover/Real SC CRT.jpg"
 import FSCShorty from "../Cover/Fake SC Shorty.jpg"
 import FSCCRT from "../Cover/Fake SC CRT.jpg"
 import FSCCNC from "../Cover/Fake SC CNC.jpg"
-
+import RLEOCORSAWK from '../Cover/Real LeoVince GP CORSA EVO with.jpg'
+import RLEOCORSAOK from "../Cover/Real LeoVince GP CORSA EVO wout.jpg"
 
 const Section2 = () => {
 
@@ -76,7 +77,15 @@ const Section2 = () => {
         {
             Pic:FSCCNC,
             Link: "https://audio.jukehost.co.uk/ZBSJOAxthpOCelVl0lmG1mK1mhDm2NEG.mp3",
-            Message: "ราคาโดยประมาณ: ฿1,400"}
+            Message: "ราคาโดยประมาณ: ฿1,400"},
+        {
+            Pic:RLEOCORSAWK,
+            Link: "https://audio.jukehost.co.uk/e8TbvieNMigMOEO1qQ1nAjO5IffysDDr.mp3",
+            Message: "ราคาโดยประมาณ: ฿8,200"},
+        {
+            Pic:RLEOCORSAOK,
+            Link: "https://audio.jukehost.co.uk/3TRBd0grs5Da1oaNd4TsyRBE3wQrqAFQ.mp3",
+            Message: "ราคาโดยประมาณ: ฿8,200"}
     ];
     //I try to using audio deposit website but Audio URL always change. So I thing using own database or add audio to folder. ;__;
     //Local mp3 not working
@@ -89,11 +98,11 @@ const Section2 = () => {
         <div className="section2">
            <div className="container-fluid " style={Style.Menu}/>
 
-           <div className="container-fluid border border-danger" style={Style.Content}>
+           <div className="container-fluid" style={Style.Content}>
                <div className="row" style={{height: "auto", paddingTop: "2vh"}}>
-                   <div className="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6 offset-lg-6 border border-warning" ref={ref}>
+                   <div className="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6 offset-lg-6" ref={ref}>
                        <div className={inView ? "animate__animated animate__slideInRight" : "d-none"} >
-                                <AwesomeSlider infinite={false} transitionDelay="0" className="border border-danger"  style={{height:"70vh"}}>        
+                                <AwesomeSlider infinite={false} transitionDelay="0" className=""  style={{height:"70vh"}}>        
                                     {Data.map((item, index) =>{
                                         return(
                                             <div className="row d-flex justify-content-center " >
@@ -102,6 +111,7 @@ const Section2 = () => {
                                                 <div className="col-7" style={{position: "relative", bottom: "55px", paddingLeft:"50px", paddingRight:"50px"}}>
                                                     <AudioPlayer style={{ height: '50px',width: "auto", backgroundColor: "transparent"}}
                                                         src={item.Link}
+                                                        preload="auto"
                                                         autoPlayAfterSrcChange={false}
                                                         showJumpControls={false}
                                                         layout="horizontal-reverse"
@@ -111,13 +121,15 @@ const Section2 = () => {
                                                 </div>
 
                                                 <div className="MufflerPrice col-9" style={{bottom:"45px", fontSize:"2.3rem", fontWeight: "bold"}}>
-                                                    {item.Message}
+                                                    {item.Message}<br/>
+                                                    
                                                 </div>
+                                                
                                             </div>
                                             )
                                         })}
                                 </AwesomeSlider>        
-                            
+                                    <p style={{display: "inline", bottom: "20px", position: 'relative'}}>(โดยราคาท่อแท้ส่วนใหญ่อ้างอิงจากเว็บต่างประเทศ)</p>
                        </div>
                        
                    </div>
@@ -125,7 +137,8 @@ const Section2 = () => {
            </div>
 
            <div className="container-fluid pt-1" style={Style.Footer}>
-                <strong className="pr-4">
+          
+                <strong className="px-4">
                     By beyondsundae 
                 </strong> 
                 <a target="_blank" href="https://github.com/beyondsundae" >
@@ -133,7 +146,7 @@ const Section2 = () => {
                         src="https://avatars2.githubusercontent.com/u/59742129?s=60&v=4" 
                         className="pr-3"
                         alt="Beyondsundae"
-                        style={{ borderRadius:"50%",height: "36px" }}/>
+                        style={{ borderRadius:"50%", border: "0", height: "30px" }}/>
                 </a>
            </div>
         </div>

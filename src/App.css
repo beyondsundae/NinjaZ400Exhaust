@@ -162,6 +162,25 @@
 
 /* Medium devices (landscape tablets, 768px and up) iPad vertical */
 @media only screen and (min-width: 768px) {
+  .FarFromTopMuffler{
+    padding-top: 5vh;
+  }
+
+  .Exhaust{
+    height: 50%;
+    /* width: auto; */
+  }
+
+  .ExhaustName{
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
+  .Scroll{
+    padding-top: 25vh;
+  }
+  
+
   .section1{
     background-image: url("./Components/Pic/bg1.png");
     background-repeat: no-repeat;
@@ -193,6 +212,24 @@
 
 /* Extra large devices (large laptops and desktops, 1920px and up) Desktop Screen */
 @media only screen and (min-width: 1920px) {
+  .FarFromTopMuffler{
+    padding-top: 20vh;
+  }
+
+  .Exhaust{
+    height: 70%;
+    /* width: auto; */
+  }
+
+  .ExhaustName{
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+
+  .Scroll{
+    padding-top: 3vh;
+  }
+
   .section1{
     background-image: url("./Components/Pic/bg1.png");
     background-repeat: no-repeat;

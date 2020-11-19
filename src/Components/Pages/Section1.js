@@ -25,21 +25,19 @@ const Section1 = () => {
                 <img src={Z400} className="ZLogo"/>
             </div>
 
-            <div className="container-fluid border border-danger " style={ Style.Content }>
+            <div className="container-fluid" style={ Style.Content }>
                 <div className="row FarFromTopMuffler">
-                    <div className="col-12 col-md-8 col-lg-5 border border-success " >
+                    <div className="col-12 col-md-8 col-lg-5" >
                     <img src={Exhaust} className="Exhaust animate__animated animate__zoomInDown" 
                         /><br/>
                         
-                        <div className="ExhaustName" >
+                        <div className="ExhaustName animate__animated animate__fadeInDown" >
                         MufflerSD, a website that collects sounds and prices for Ninja400 and Z400's muffler.
                         </div>
                         <br/>
-                        <div className="ExhaustName" >
-                        MufflerSD, เป็นเว็บที่รวบรวมเสียงและราคาท่อไอเสียสำหรับ Ninja400 และ Z400.
+                        <div className="ExhaustName animate__animated animate__fadeInDown" >
+                        MufflerSD, เป็นเว็บที่รวบรวมเสียงและราคาท่อไอเสียสำหรับ Ninja400 และ Z400. 
                         </div>
-                        
-
                     </div>
 
                     <div className="Scroll col-12 text-center" style={{marginTop: "1vh"}}>
