@@ -21,7 +21,6 @@ import FSCCNC from "../Cover/Fake SC CNC.jpg"
 import RLEOCORSAWK from '../Cover/Real LeoVince GP CORSA EVO with.jpg'
 import RLEOCORSAOK from "../Cover/Real LeoVince GP CORSA EVO wout.jpg"
 
-import Scroll from '../Pic/scroll.gif'
 
 const Section2 = () => {
 
@@ -135,14 +134,14 @@ const Section2 = () => {
                                         })}
                                 </AwesomeSlider>        
                                         {width < 800? 
-                                                    (
-                                                        <p style={{display: "ิblock", bottom: "90px", position: 'relative', fontSize: "2rem"}}>← เลื่อนที่นี่ →</p>
-                                                    )
-                                               
-                                                    :(
-                                                        ""
-                                                    ) 
-                                                    }
+                                            (
+                                                <p style={{display: "ิblock", bottom: "90px", position: 'relative', fontSize: "2rem"}}>← เลื่อนที่นี่ →</p>
+                                            )
+                                        
+                                            :(
+                                                ""
+                                            ) 
+                                            }
                                     
                                     <p style={{display: "inline", bottom: "20px", position: 'relative'}}>(โดยราคาท่อแท้ส่วนใหญ่อ้างอิงจากเว็บต่างประเทศ)</p>
                        </div>
