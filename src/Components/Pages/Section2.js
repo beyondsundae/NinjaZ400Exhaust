@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import ReactPlayer from "react-player"
 import AwesomeSlider from 'react-awesome-slider';
 import '../customCSS/styles.css';
@@ -40,6 +40,9 @@ const Section2 = () => {
         threshold: 0.5,
         triggerOnce: true
       });
+
+      const {width} = useWidth()
+      const breakPoint = 500
 
     const Data = [
         {
@@ -129,6 +132,15 @@ const Section2 = () => {
                                             )
                                         })}
                                 </AwesomeSlider>        
+                                {width < 800? 
+                                            (
+                                                <p style={{display: "ิblock", bottom: "50px", position: 'relative', fontSize: "2rem"}}>← เลื่อนที่นี่ →</p>
+                                            )
+                                        
+                                            :(
+                                                ""
+                                            ) 
+                                            }
                                     <p style={{display: "inline", bottom: "20px", position: 'relative'}}>(โดยราคาท่อแท้ส่วนใหญ่อ้างอิงจากเว็บต่างประเทศ)</p>
                        </div>
                        
@@ -154,3 +166,21 @@ const Section2 = () => {
 }
 
 export default Section2
+
+const useWidth = () => {
+    const [ width, setWidth ] = useState(window.innerWidth)
+
+    const widthHandler =()=>{
+        setWidth(window.innerWidth)
+    }
+
+    useEffect(()=>{
+        window.addEventListener("resize", widthHandler)
+
+        return()=>{
+            window.removeEventListener("resize", widthHandler)
+        }
+    }, [])
+
+    return { width };
+}
