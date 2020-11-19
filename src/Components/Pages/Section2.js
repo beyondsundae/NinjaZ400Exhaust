@@ -1,7 +1,7 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import ReactPlayer from "react-player"
 import AwesomeSlider from 'react-awesome-slider';
-import 'react-awesome-slider/dist/styles.css';
+import '../customCSS/styles.css';
 
 
 import AudioPlayer, { RHAP_UI } from "react-h5-audio-player";
@@ -18,6 +18,10 @@ import RSCCRT from "../Cover/Real SC CRT.jpg"
 import FSCShorty from "../Cover/Fake SC Shorty.jpg"
 import FSCCRT from "../Cover/Fake SC CRT.jpg"
 import FSCCNC from "../Cover/Fake SC CNC.jpg"
+import RLEOCORSAWK from '../Cover/Real LeoVince GP CORSA EVO with.jpg'
+import RLEOCORSAOK from "../Cover/Real LeoVince GP CORSA EVO wout.jpg"
+
+import Scroll from '../Pic/scroll.gif'
 
 const Section2 = () => {
 
@@ -26,7 +30,11 @@ const Section2 = () => {
             height: "7vh",
         },
         Content:{
-            height: "92vh"
+            height: "87vh"
+        },
+        Footer:{
+            height: "6vh",
+            textAlign: "right"
         }
     })
 
@@ -35,86 +43,189 @@ const Section2 = () => {
         triggerOnce: true
       });
 
+      const {width} = useWidth()
+        const breakPoint = 500
+
     const Data = [
         {
             Pic:N400y,
-            Link: "https://cf-media.sndcdn.com/YE266kPqoCZw.128.mp3?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLW1lZGlhLnNuZGNkbi5jb20vWUUyNjZrUHFvQ1p3LjEyOC5tcDMiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2MDU1OTA2NjN9fX1dfQ__&Signature=TSenLBKNw7ASm3XnhhNtdpxCF~dtVReqByTmYSJ95Y4zKP3P-XiDr-lWtO99eAxejzmmQ~qiwHF2a05PqDVz4X3hH00ROUlgN90S8-vcpNzB2fsdyCRZkgMoiFkZFPdkaTNK6sgV4YL0Uh5hrsZSDZ~PASJ-RrJ6ff00ABVfQ1ClxxN5q7r7f-Q4R8Hnao7q-tcZPYklP9GMOaD6hf76LnmeQ16nPyhBMtnv5DuajYqHGy02yH~PU38yYbJeDvwZzBtWrObh11vNmfv-rD3JAQvminExSLanf7TsVk-912Y~T0pFwr~nwDLX3tsXdnzpWe2Z6RY27SgDrnBvEHJI6w__&Key-Pair-Id=APKAI6TU7MMXM5DG6EPQ",
-            Message: "ราคาโดยประมาณ: ฿1,200"}, 
+            Link: "https://soundcloud.com/libliss/ninja400zeus",
+            Message: "ราคาโดยประมาณ: ฿1,000 - ฿1,200"}, 
         {
             Pic:RAkraCarbon,
-            Link: "https://download1980.mediafire.com/6z8a1ni0newg/y7jnnjp6r5t5uo1/Real_AkraCarbon.mp3",
+            Link: "https://soundcloud.com/libliss/ninja400realakracarbon",
             Message: "ราคาโดยประมาณ: ฿13,600"}, 
         {
             Pic:RAkraTita,
-            Link: "https://download1323.mediafire.com/a156wycpjkzg/lrkexo6qotrelhp/Real_AkraTita.mp3",
+            Link: "https://soundcloud.com/libliss/ninja400realakratitanium",
             Message: "ราคาโดยประมาณ: ฿15,000"}, 
         {
             Pic:FAkraGP,
-            Link: "https://download1334.mediafire.com/p1hznqameuag/a5xdu65q91pkicp/Fake_Akra_GP.mp3",
+            Link: "https://soundcloud.com/libliss/ninja400fakegpr1",
             Message: "ราคาโดยประมาณ: ฿2,690"}, 
         {
             Pic:RLeolv10,
-            Link: "https://download1327.mediafire.com/h4zopqoa5s2g/7lb3xtgcogx84ru/Real_Leo_lv10.mp3",
-            Message: "ราคาโดยประมาณ: B6,700"}, 
+            Link: "https://soundcloud.com/libliss/ninja400realleovincelv10",
+            Message: "ราคาโดยประมาณ: ฿6,700"}, 
         {
             Pic:RSCCRT,
-            Link: "https://download853.mediafire.com/9gojuy93xsdg/hgdz63mudwbw938/Real_SC_CRT.mp3",
+            Link: "https://soundcloud.com/libliss/ninja400realsccrt",
             Message: "ราคาโดยประมาณ: ฿18,000"}, 
         {
             Pic:FSCShorty,
-            Link: "https://download948.mediafire.com/ox1evr5guoeg/dbw0x6daq8qj153/Fake_SC_Shorty.mp3",
+            Link: "https://soundcloud.com/libliss/ninja400fakescshortytita",
             Message: "ราคาโดยประมาณ: ฿2,900"}, 
         {
             Pic:FSCCRT,
-            Link: "https://download1491.mediafire.com/c7jsrbbporxg/it3i9rtv0m80dsk/Fake_SC_CRT.mp3",
+            Link: "https://soundcloud.com/libliss/ninja400fakesc",
             Message: "ราคาโดยประมาณ: ฿700-900"}, 
         {
             Pic:FSCCNC,
-            Link: "https://download857.mediafire.com/9j8hr6wmexag/mtoiwwzbqrake3n/Fake_SC_CNC.mp3",
-            Message: "ราคาโดยประมาณ: ฿1,400"}
+            Link: "https://soundcloud.com/libliss/ninja400fakesccnc",
+            Message: "ราคาโดยประมาณ: ฿1,400"},
+        {
+            Pic:RLEOCORSAWK,
+            Link: "https://soundcloud.com/libliss/ninja400realleocrswodbkll",
+            Message: "ราคาโดยประมาณ: ฿8,200"},
+        {
+            Pic:RLEOCORSAOK,
+            Link: "https://soundcloud.com/libliss/ninja400realleocrswdbkll",
+            Message: "ราคาโดยประมาณ: ฿8,200"}
     ];
     //I try to using audio deposit website but Audio URL always change. So I thing using own database or add audio to folder. ;__;
+    //Local mp3 not working
+
+    //Free Storage that working
+    //https://jukehost.co.uk/
+    //https://www.opendrive.com/
 
     return (
         <div className="section2">
-           <div className="container-fluid border border-danger" style={Style.Menu}/>
+           <div className="container-fluid " style={Style.Menu}/>
 
-           <div className="container-fluid border border-danger" style={Style.Content}>
-               <div className="row" style={{height: "91vh", paddingTop: "2vh"}}>
-                   <div className="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6 offset-lg-6 border border-danger" ref={ref}>
+           <div className="container-fluid" style={Style.Content}>
+               <div className="row" style={{height: "auto", paddingTop: "2vh"}}>
+                   <div className="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6 offset-lg-6" ref={ref}>
                        <div className={inView ? "animate__animated animate__slideInRight" : "d-none"} >
-                                <AwesomeSlider infinite={false} transitionDelay="0" className="border border-danger"  style={{height:"70vh"}}>        
+                                <AwesomeSlider infinite={false} transitionDelay="0" className=""  style={{height:"70vh"}}>        
                                     {Data.map((item, index) =>{
                                         return(
                                             <div className="row d-flex justify-content-center " >
-                                                <div><img src={item.Pic} style={{height:"50vh", borderRadius: "0%"}}/></div>
 
-                                                <div className="col-7" style={{position: "relative", bottom: "55px", paddingLeft:"50px", paddingRight:"50px"}}>
-                                                    <AudioPlayer style={{ height: '50px',width: "auto", backgroundColor: "transparent"}}
-                                                        src={item.Link}
-                                                        autoPlayAfterSrcChange={false}
-                                                        showJumpControls={false}
-                                                        layout="horizontal-reverse"
-                                                        customProgressBarSection={[RHAP_UI.PROGRESS_BAR]}
-                                                        customControlsSection={[RHAP_UI.MAIN_CONTROLS]}
-                                                    />
+                                                <div className="col-12 col-md-10 col-lg-12 col-xl-10" style={{position: "relative", bottom: "55px", paddingLeft:"50px", paddingRight:"50px"}}>
+                                                    
+                                                    {width < breakPoint? 
+                                                    (
+                                                        <div dangerouslySetInnerHTML={{ __html: getHTMLSm(item.Link)}}/>
+                                                    )
+                                               
+                                                    :(
+                                                        <div  dangerouslySetInnerHTML={{__html: getHTMLXl(item.Link)}} />
+                                                    ) 
+                                                    }
                                                 </div>
 
-                                                <div className="col-9" style={{bottom:"45px", fontSize:"3rem", fontWeight: "bold"}}>
-                                                    {item.Message}
+                                                <div className="MufflerPrice col-9" style={{bottom:"45px", fontSize:"2.3rem", fontWeight: "bold"}}>
+                                                    {item.Message}<br/>
+                                                    
                                                 </div>
+                                                
                                             </div>
                                             )
                                         })}
                                 </AwesomeSlider>        
-                            
+                                        {width < 800? 
+                                                    (
+                                                        <p style={{display: "ิblock", bottom: "90px", position: 'relative', fontSize: "2rem"}}>← เลื่อนที่นี่ →</p>
+                                                    )
+                                               
+                                                    :(
+                                                        ""
+                                                    ) 
+                                                    }
+                                    
+                                    <p style={{display: "inline", bottom: "20px", position: 'relative'}}>(โดยราคาท่อแท้ส่วนใหญ่อ้างอิงจากเว็บต่างประเทศ)</p>
                        </div>
                        
                    </div>
                </div>
+           </div>
+
+           <div className="container-fluid pt-1" style={Style.Footer}>
+          
+                <strong className="px-4">
+                    By beyondsundae 
+                </strong> 
+                <a target="_blank" href="https://github.com/beyondsundae" >
+                    <img 
+                        src="https://avatars2.githubusercontent.com/u/59742129?s=60&v=4" 
+                        className="pr-3"
+                        alt="Beyondsundae"
+                        style={{ borderRadius:"50%", border: "0", height: "30px" }}/>
+                </a>
            </div>
         </div>
     )
 }
 
 export default Section2
+
+const useWidth = () => {
+    const [ width, setWidth ] = useState(window.innerWidth)
+
+    const widthHandler =()=>{
+        setWidth(window.innerWidth)
+    }
+
+    useEffect(()=>{
+        window.addEventListener("resize", widthHandler)
+
+        return()=>{
+            window.removeEventListener("resize", widthHandler)
+        }
+    }, [])
+
+    return { width };
+}
+
+const getSoundcloudIFrameSrc = (string) =>
+    `https://w.soundcloud.com/player` +
+    `?url=${string}` +
+    `&color=ff5500` +
+    `&auto_play=false` +
+    `&hide_related=true` +
+    `&show_comments=true` +
+    `&show_user=true` +
+    `&show_reposts=false` +
+    `&show_teaser=false` +
+    `&visual=true`;
+
+export const getHTMLXl = (string) => {
+    const iframeUrl = getSoundcloudIFrameSrc(string);
+  
+    return (
+      `<iframe` +
+      ` width="100%"` +
+      ` height="480"` +
+      ` scrolling="no"` +
+      ` frameborder="no"` +
+      ` allow="autoplay"` +
+      ` src=${iframeUrl}` +
+      `></iframe>`
+    );
+  };
+
+  export const getHTMLSm = (string) => {
+    const iframeUrl = getSoundcloudIFrameSrc(string);
+  
+    return (
+      `<iframe` +
+      ` width="100%"` +
+      ` height="280"` +
+      ` scrolling="no"` +
+      ` frameborder="no"` +
+      ` allow="autoplay"` +
+      ` src=${iframeUrl}` +
+      `></iframe>`
+    );
+  };

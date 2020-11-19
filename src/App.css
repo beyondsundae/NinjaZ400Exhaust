@@ -25,7 +25,6 @@
   color: white;
 }
 
-
 .App-link {
   color: #61dafb;
 }
@@ -56,14 +55,132 @@
   height: 100vh
 } 
 
-/* Extra small devices (phones, 600px and down) Mobile  */
-@media only screen and (max-width: 600px) {}
+.NinjaLogo{
+  height: 90%;
+}
+.ZLogo{
+  height: 70%;
+}
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+.FarFromTopMuffler{
+  padding-top: 20vh;
+}
+
+.Exhaust{
+  height: auto;
+  width: auto;
+}
+
+/* Extra small devices (phones, 600px and down) Mobile  */
+@media only screen and (max-width: 600px) {
+  .NinjaLogo{
+    height: 80% ;
+  }
+  .ZLogo{
+    height: 60%;
+  }
+
+  .FarFromTopMuffler{
+    padding-top: 5vh;
+  }
+
+  .Exhaust{
+    /* height: 30%; */
+    width: 80% ;
+  }
+
+  .ExhaustName{
+    font-size: 1rem;
+    font-weight: bold;
+    padding-top: 10px;
+  }
+
+  .Scroll{
+    padding-top: 35vh;
+  }
+
+  .section1{
+    background-image: url("./Components/Pic/bg1.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 70% ;
+    
+    }
+  .section2{
+    background-image: url("./Components/Pic/bg2.png");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 60% ;
+    }
+
+  .MufflerPrice{
+    font-size: 1.5rem !important;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) iPhone */
+@media only screen and (min-width: 600px) {
+  .NinjaLogo{
+    height: 90% ;
+  }
+  .ZLogo{
+    height: 70%;
+  }
+
+  .FarFromTopMuffler{
+    padding-top: 20vh;
+  }
+
+  .Exhaust{
+    height: 60%;
+    /* width: auto; */
+  }
+
+  .ExhaustName{
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+
+  .section1{
+    background-image: url("./Components/Pic/bg1.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 70% ;
+    
+    }
+  .section2{
+    background-image: url("./Components/Pic/bg2.png");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 60% ;
+    }
+
+  .MufflerPrice{
+    font-size: 2rem;
+  }
+}
 
 /* Medium devices (landscape tablets, 768px and up) iPad vertical */
 @media only screen and (min-width: 768px) {
+  .FarFromTopMuffler{
+    padding-top: 5vh;
+  }
+
+  .Exhaust{
+    height: 50%;
+    /* width: auto; */
+  }
+
+  .ExhaustName{
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
+  .Scroll{
+    padding-top: 25vh;
+  }
+  
+
   .section1{
     background-image: url("./Components/Pic/bg1.png");
     background-repeat: no-repeat;
@@ -95,6 +212,24 @@
 
 /* Extra large devices (large laptops and desktops, 1920px and up) Desktop Screen */
 @media only screen and (min-width: 1920px) {
+  .FarFromTopMuffler{
+    padding-top: 20vh;
+  }
+
+  .Exhaust{
+    height: 70%;
+    /* width: auto; */
+  }
+
+  .ExhaustName{
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+
+  .Scroll{
+    padding-top: 3vh;
+  }
+
   .section1{
     background-image: url("./Components/Pic/bg1.png");
     background-repeat: no-repeat;

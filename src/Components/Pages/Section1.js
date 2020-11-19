@@ -21,22 +21,26 @@ const Section1 = () => {
     return (
         <div className="section1">
             <div className="container-fluid pt-2 text-left" style={ Style.Menu }>
-                <img src={N400} style={{height: "90%"}}/>
-                <img src={Z400} style={{height: "80%"}}/>
+                <img src={N400} className="NinjaLogo"/>
+                <img src={Z400} className="ZLogo"/>
             </div>
 
-            <div className="container-fluid border border-danger " style={ Style.Content }>
-                <div className="row " style={{paddingTop: "30vh"}}>
-                    <div className="col-6 col-md-8 col-lg-6 border border-success " >
-                    <img className="animate__animated animate__zoomInDown" src={Exhaust} style={{height: "50%"}}/><br/>
+            <div className="container-fluid" style={ Style.Content }>
+                <div className="row FarFromTopMuffler">
+                    <div className="col-12 col-md-8 col-lg-5" >
+                    <img src={Exhaust} className="Exhaust animate__animated animate__zoomInDown" 
+                        /><br/>
                         
-                        <div className="ExhaustName" >
-                            Exhaust Sound
+                        <div className="ExhaustName animate__animated animate__fadeInDown" >
+                        MufflerSD, a website that collects sounds and prices for Ninja400 and Z400's muffler.
                         </div>
-
+                        <br/>
+                        <div className="ExhaustName animate__animated animate__fadeInDown" >
+                        MufflerSD, เป็นเว็บที่รวบรวมเสียงและราคาท่อไอเสียสำหรับ Ninja400 และ Z400. 
+                        </div>
                     </div>
 
-                    <div className="col-12 text-center" style={{marginTop: "1vh"}}>
+                    <div className="Scroll col-12 text-center" style={{marginTop: "1vh"}}>
 
                         <img src={scroll} style={{height: "10vh"}}/>
                     </div>
